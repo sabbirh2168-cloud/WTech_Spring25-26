@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Financial Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Financial Statement Form</h2>
+
+    <form id="dataForm">
+        <table>
+            <tr>
+                <th>Account Name</th>
+                <th>Amount</th>
+                <th>Notes</th>
+            </tr>
+
+            <tr>
+                <td>Assets</td>
+                <td><input type="number" name="assets"></td>
+                <td><input type="text" name="assets_note"></td>
+            </tr>
+
+            <tr>
+                <td>Liabilities</td>
+                <td><input type="number" name="liabilities"></td>
+                <td><input type="text" name="liabilities_note"></td>
+            </tr>
+
+            <tr>
+                <td>Revenue</td>
+                <td><input type="number" name="revenue"></td>
+                <td><input type="text" name="revenue_note"></td>
+            </tr>
+
+            <tr>
+                <td>Expenses</td>
+                <td><input type="number" name="expenses"></td>
+                <td><input type="text" name="expenses_note"></td>
+            </tr>
+
+            <tr>
+                <td colspan="3" class="center">
+                    <button type="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+
+        <p id="errorMsg"></p>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
